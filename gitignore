@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local env / secrets (if any are ever added, e.g. Formspree keys kept outside the repo)
+.env
+.env.local
+
+# Logs
+*.log
+
+# Archives created while packaging the site for sharing
+*.zip
