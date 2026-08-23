@@ -275,7 +275,7 @@ Navigate Centre provides accessible and professional digital solutions for every
 **Eldoret, Kenya**
 
 **Website:**
-[https://navigatecenter.publicvm.com](https://navigatecenter.publicvm.com)
+[https://navigatecenter.publicvm.com](https://www.navigatecenter.publicvm.com)
 
 ---
 
