@@ -106,7 +106,7 @@ The Navigate Centre website provides customers with a simple way to:
 
 ### Live Website
 
-**[https://navigatecenter.publicvm.com](https://navigatecenter.publicvm.com)**
+**[https://navigatecenter.publicvm.com](https://www.navigatecenter.publicvm.com)**
 
 ---
 
@@ -210,7 +210,7 @@ For GitHub Pages:
 
 The current public website is:
 
-**[https://navigatecenter.publicvm.com](https://navigatecenter.publicvm.com)**
+**[https://navigatecenter.publicvm.com](https://www.navigatecenter.publicvm.com)**
 
 ---
 
