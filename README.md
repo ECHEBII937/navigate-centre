@@ -1,149 +1,287 @@
-<p align="center"> <img src="images/logo.png" alt="Navigate Centre" width="360"> </p>
+<p align="center">
+  <img src="images/logo.png" alt="Navigate Centre" width="320">
+</p>
 
-<h1 align="center">Navigate Centre — Website</h1> <p align="center"><em>Your Digital Service Partner</em></p>
+<h1 align="center">Navigate Centre</h1>
 
-<p align="center"> <img alt="status" src="https://img.shields.io/badge/status-live-C7E31A?style=flat-square"> <img alt="stack" src="https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20JS-2346B8?style=flat-square"> <img alt="hosting" src="https://img.shields.io/badge/hosted%20on-GitHub%20Pages-1E1A1B?style=flat-square"> </p>
+<p align="center">
+  <strong>Your Digital Service Partner</strong>
+</p>
 
-About
+<p align="center">
+  Digital Services · Printing · Branding · ICT Support
+</p>
 
-Navigate Centre is a digital services, printing, branding, cyber, and ICT support centre based in Eldoret, Kenya.
+<p align="center">
+  <img alt="Status" src="https://img.shields.io/badge/status-live-C7E31A?style=flat-square">
+  <img alt="Stack" src="https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20JS-2346B8?style=flat-square">
+  <img alt="Location" src="https://img.shields.io/badge/location-Eldoret%2C%20Kenya-1E1A1B?style=flat-square">
+</p>
 
-We provide convenient and professional solutions for individuals, students, businesses, institutions, and organizations — bringing essential digital services, printing, document services, graphic design, branding, online services, and ICT support together under one roof.
+---
 
-Navigate Centre is built around a simple idea:
+## About
 
-Making digital services easier, faster, and more accessible.
+**Navigate Centre** is a digital services, printing, branding, cyber, and ICT support centre based in **Eldoret, Kenya**.
 
-From everyday printing and photocopying to professional graphic design, business branding, CV preparation, online government services, document processing, and ICT assistance, Navigate Centre helps customers get things done efficiently and professionally.
+We provide practical and professional digital solutions for individuals, students, businesses, institutions, and organizations.
 
-This repository contains the source code for the official Navigate Centre website — a fast, responsive, single-page website designed to introduce the business, showcase its services, and make it easy for customers to connect with us.
+Our services bring together:
 
-The website is intentionally built without heavy frameworks or complicated build systems, keeping it lightweight, fast, and easy to maintain as Navigate Centre continues to grow.
+* Digital and cyber services
+* Printing and photocopying
+* Graphic design and branding
+* Document preparation
+* Online government services
+* CV and professional document services
+* ICT support and training
 
-Services
+Navigate Centre is built around a simple goal:
 
-Navigate Centre provides a growing range of digital, creative, printing, and ICT services, including:
+> **Making digital services easier, faster, and more accessible.**
 
-🖥️ Cyber & Digital Services
-🖨️ Printing & Photocopying
-📄 Document Preparation & Formatting
-📑 Scanning & Document Services
-🎨 Graphic Design
-🏷️ Business Branding
-💼 Business Cards & Marketing Materials
-📢 Posters, Flyers & Banners
-📱 Social Media Graphics
-📋 CV Writing & Professional CV Design
-🏛️ eCitizen Services
-🧾 KRA Services
-🎓 HELB Services
-🚗 NTSA Services
-💻 Computer & ICT Support
-⌨️ Typing & Data Entry
-📚 Academic & Professional Document Services
-📊 Presentations & Business Documents
-🧑‍🏫 ICT Training & Digital Skills Support
+This repository contains the source code for the official Navigate Centre website.
 
-Services may be expanded as new products and digital solutions are introduced.
+---
 
-Features
-📱 Fully responsive, mobile-first layout
-🧭 Navigate Centre brand identity throughout the website
-🗂️ Comprehensive services section covering digital, printing, branding, design, and ICT services
-🎨 Custom visual design based on the Navigate Centre brand identity
-💬 Floating WhatsApp button for instant customer contact
-📍 Google Maps integration for easy location discovery
-❓ FAQ accordion for common customer questions
-📩 Contact form for customer enquiries
-🔗 Social media integration
-⚡ Lightweight and fast-loading
-🧩 No heavy frameworks or unnecessary dependencies
-🛠️ Simple HTML, CSS and JavaScript structure for easy maintenance
-Live Site
+## Services
 
-Once deployed through GitHub Pages, the website will be available at:
+### Digital & Cyber Services
 
-https://<your-github-username>.github.io/navigate-centre/
+* eCitizen services
+* KRA services
+* HELB services
+* NTSA services
+* Online applications
+* Internet and computer services
+* Scanning and document processing
+* Typing and data entry
 
-Update this link once the official GitHub Pages address or custom domain has been configured.
+### Printing & Documents
 
-Project Structure
+* Black & white printing
+* Colour printing
+* Photocopying
+* Document formatting
+* Scanning
+* Binding
+* Lamination
+* Academic and professional documents
+
+### Design & Branding
+
+* Logo design
+* Business cards
+* Posters and flyers
+* Banners
+* Social media graphics
+* Company profiles
+* Business branding
+* Event branding
+* Marketing materials
+
+### ICT & Professional Services
+
+* Computer support
+* ICT assistance
+* Basic computer training
+* CV writing and redesign
+* Cover letters
+* Presentations
+* Business documents
+
+---
+
+## Website
+
+The Navigate Centre website provides customers with a simple way to:
+
+* Explore available services
+* Learn more about Navigate Centre
+* Find the business location
+* Contact the centre
+* Access WhatsApp communication
+* Submit enquiries
+* View frequently asked questions
+
+### Live Website
+
+**[https://navigatecenter.publicvm.com](https://navigatecenter.publicvm.com)**
+
+---
+
+## Features
+
+* Fully responsive design
+* Mobile-first layout
+* Navigate Centre brand identity
+* Service catalogue
+* WhatsApp contact integration
+* Google Maps integration
+* FAQ accordion
+* Contact form
+* Social media links
+* Lightweight HTML, CSS and JavaScript
+* No heavy frameworks
+* Easy to maintain and update
+
+---
+
+## Technology
+
+The website is built using simple web technologies:
+
+| Technology | Purpose                         |
+| ---------- | ------------------------------- |
+| HTML5      | Website structure               |
+| CSS3       | Styling and responsive layout   |
+| JavaScript | Interactivity and functionality |
+| Git        | Version control                 |
+| GitHub     | Source code management          |
+
+No framework or build system is required.
+
+---
+
+## Project Structure
+
+```text
 navigate-centre/
-├── index.html          # All website content and sections
-├── style.css           # Brand colours, layout and responsive rules
-├── script.js           # Navigation, FAQ, back-to-top and form functionality
+│
+├── index.html
+├── style.css
+├── script.js
+│
 ├── images/
-│   └── logo.png        # Navigate Centre brand logo
-├── favicon/            # Favicon set
-├── assets/             # Additional website assets
-├── README.md           # Project documentation
-└── .gitignore          # Git configuration
-Before Going Live
+│   └── logo.png
+│
+├── favicon/
+│
+├── assets/
+│
+├── README.md
+└── .gitignore
+```
 
-A few website elements may require production information. These are marked with TODO comments in index.html.
+### Main Files
 
-What	Where	Replace with
-Contact form	<form action="...">	Official Formspree form endpoint
-WhatsApp	WhatsApp button/link	Official Navigate Centre WhatsApp number
-Phone	Contact section	Official business phone number
-Email	Contact section/footer	Official Navigate Centre email
-Location	Contact/Map section	Confirmed Navigate Centre location
-Google Maps	Map embed	Correct Navigate Centre map location
-Social links	Footer/social icons	Official Facebook, Instagram, TikTok & LinkedIn pages
-Jobs	Jobs/careers section	Official jobs or careers destination, if applicable
-Deploying to GitHub Pages
-Push this repository to GitHub.
-Open the repository Settings.
-Select Pages from the sidebar.
-Under Build and deployment, select the main branch.
-Select the repository root folder.
-Click Save.
-GitHub will publish the website at the generated Pages URL.
-If a custom domain is available, configure it under Settings → Pages → Custom domain.
-Editing
+**`index.html`**
+Contains the website structure, content, services, contact information, and page sections.
 
-Everything lives in plain HTML, CSS and JavaScript, so there is no framework installation, build process, or compilation required.
+**`style.css`**
+Controls the visual design, layout, typography, responsiveness, and Navigate Centre brand styling.
 
-Open:
+**`script.js`**
+Handles navigation, FAQ interactions, back-to-top functionality, contact form behaviour, and other interactive elements.
 
+**`images/`**
+Contains the Navigate Centre logo and other website imagery.
+
+---
+
+## Brand Identity
+
+Navigate Centre uses a simple and distinctive visual identity built around three primary colours.
+
+| Element    | Value     |
+| ---------- | --------- |
+| Black      | `#1E1A1B` |
+| Lime Green | `#C7E31A` |
+| Royal Blue | `#2346B8` |
+| Headings   | Poppins   |
+| Body       | Inter     |
+
+The brand system is applied consistently across the website and Navigate Centre's digital and physical branding materials.
+
+---
+
+## Deployment
+
+The website can be deployed using GitHub Pages or another compatible web server.
+
+For GitHub Pages:
+
+1. Push the repository to GitHub.
+2. Open **Settings → Pages**.
+3. Select the `main` branch.
+4. Select the repository root.
+5. Save the configuration.
+6. Configure a custom domain if required.
+
+The current public website is:
+
+**[https://navigatecenter.publicvm.com](https://navigatecenter.publicvm.com)**
+
+---
+
+## Editing
+
+The website is intentionally simple to edit.
+
+No installation or build process is required.
+
+Open the project in any code editor and modify:
+
+```text
 index.html
+```
 
-in any code editor to modify the website content.
+for content changes.
 
-The page sections are clearly commented, for example:
+Modify:
 
-<!-- ============ SERVICES ============ -->
-
-Website styling and brand settings are primarily managed through:
-
+```text
 style.css
+```
 
-The main brand colours and typography are defined in the :root section, allowing the visual identity to be updated from one central location.
+for design and branding changes.
 
-Interactive functionality is handled through:
+Modify:
 
+```text
 script.js
-Brand
+```
 
-Navigate Centre uses a bold, modern identity built around technology, accessibility, creativity, and professionalism.
+for interactive functionality.
 
+Major sections inside `index.html` are clearly commented to make the source easy to navigate.
 
-	
+---
 
-⬛ Black	#1E1A1B
-🟢 Lime Green	#C7E31A
-🔵 Royal Blue	#2346B8
-Headings	Poppins
-Body	Inter
+## Production Checklist
 
-These colours form the core of the Navigate Centre visual identity and are used across the website and other branded materials.
+Before making major production updates, verify:
 
-Our Approach
+* [ ] Business contact information
+* [ ] WhatsApp number
+* [ ] Email address
+* [ ] Physical location
+* [ ] Google Maps location
+* [ ] Contact form endpoint
+* [ ] Social media links
+* [ ] Service information
+* [ ] Website domain
+* [ ] Logo and favicon
+* [ ] Mobile responsiveness
 
-Navigate Centre is designed to be more than just a cyber café.
+---
 
-We aim to provide a convenient one-stop digital and creative service centre where customers can access the technology, printing, design, branding, and online services they need.
+## Navigate Centre
 
-Whether it is a single document, a complete business identity, an online application, professional printing, or digital assistance, our focus is on delivering accessible services, professional results, and convenient solutions.
+**Digital Services. Printing. Branding. ICT.**
 
-<p align="center"> Built and maintained by <strong>Emmanuel Kibiwott Chebii</strong><br> for <strong>Navigate Centre</strong> · Eldoret, Kenya<br><br> © 2026 Navigate Centre. All Rights Reserved. </p>
+Navigate Centre provides accessible and professional digital solutions for everyday needs, businesses, students, and organizations.
+
+**Eldoret, Kenya**
+
+**Website:**
+[https://navigatecenter.publicvm.com](https://navigatecenter.publicvm.com)
+
+---
+
+<p align="center">
+  <strong>Built and maintained by Emmanuel Kibiwott Chebii</strong><br>
+  for <strong>Navigate Centre</strong> · Eldoret, Kenya
+  <br><br>
+  © 2026 Navigate Centre. All Rights Reserved.
+</p>
