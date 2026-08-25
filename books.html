@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Borrow Books | Navigate Centre</title>
-<meta name="description" content="Borrow books at Navigate Centre, Eldoret — fiction, academic, children's books, business and self-development titles, magazines and more.">
+<meta name="description" content="Borrow books from Navigate Centre. Choose a book and submit a simple rental request.">
 <meta name="robots" content="index, follow">
 
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
@@ -14,39 +15,64 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Reuses the site's existing stylesheet — no CSS changes needed -->
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Icon sprite (same icons used on the homepage) -->
+<!-- Icon sprite -->
 <svg style="display:none">
 <defs>
-<symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
-<symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v3a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
-<symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3.5 6.5L12 13l8.5-6.5"/></symbol>
-<symbol id="icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2c-2-1.5-5-2-8-1.5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5v-13c-3-.5-6 0-8 1.5z"/><line x1="12" y1="6.2" x2="12" y2="19.2"/></symbol>
-<symbol id="icon-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4L2 9l10 5 10-5-10-5z"/><path d="M6 11.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/><line x1="22" y1="9" x2="22" y2="15"/></symbol>
-<symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-7.4-4.6-9.8-9.2C.6 8 2.2 4.3 6 3.8c2 0 3.6 1 4 2.1.5-1.1 2-2.1 4-2.1 3.8.5 5.4 4.2 3.8 7.5-2.4 4.6-9.8 9.2-9.8 9.2z"/></symbol>
-<symbol id="icon-cv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><line x1="7.5" y1="8" x2="16.5" y2="8"/><line x1="7.5" y1="12" x2="16.5" y2="12"/><line x1="7.5" y1="16" x2="13" y2="16"/></symbol>
-<symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3c2.4 2.5 3.7 5.9 3.7 9s-1.3 6.5-3.7 9c-2.4-2.5-3.7-5.9-3.7-9s1.3-6.5 3.7-9z"/></symbol>
-<symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12.5 9.5 18 20 6"/></symbol>
-<symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M15.5 8.5h2.3V5.1c-.4-.05-1.8-.17-3.4-.17-3.35 0-5.65 2.1-5.65 5.97v2.5H5.4v3.9h3.35V22h4v-4.7h3.2l.5-3.9h-3.7v-2.1c0-1.13.3-1.9 1.75-1.9z"/></symbol>
-<symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></symbol>
-<symbol id="icon-tiktok" viewBox="0 0 24 24"><path d="M16.5 3c.4 2.2 1.8 3.7 4 3.9v3.1c-1.4 0-2.8-.4-4-1.2v6.4c0 3.4-2.7 5.8-5.9 5.8-3.2 0-5.9-2.4-5.9-5.8 0-3.3 2.6-5.7 5.8-5.8v3.2c-1.4.1-2.5 1.2-2.5 2.6 0 1.5 1.2 2.6 2.6 2.6 1.5 0 2.7-1.1 2.7-2.7V3z"/></symbol>
-<symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M4.8 3.5a2 2 0 100 4 2 2 0 000-4zM3.2 9h3.2v11.5H3.2zM10 9h3.1v1.6h.05c.43-.8 1.5-1.7 3.1-1.7 3.3 0 3.95 2.2 3.95 5v6.6h-3.2v-5.9c0-1.4 0-3.2-2-3.2-2 0-2.3 1.5-2.3 3.1v6h-3.2z"/></symbol>
-<symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M12 2.5A9.5 9.5 0 003.6 17l-1.2 4.4 4.5-1.2A9.5 9.5 0 1012 2.5zm5.5 13.4c-.2.6-1.3 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.5s.8 2 .9 2.1c.1.2.1.4 0 .6-.1.2-.2.3-.4.5-.2.2-.4.5-.5.6-.2.2-.4.4-.2.7.2.3.9 1.5 2 2.4 1.3 1.2 2.4 1.5 2.8 1.7.3.2.5.1.7-.1.2-.2.8-.9 1-1.3.2-.3.4-.3.7-.2s2 .9 2.3 1.1c.3.2.5.3.6.4.1.2.1.9-.1 1.5z"/></symbol>
+
+<symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+<line x1="3" y1="6" x2="21" y2="6"/>
+<line x1="3" y1="12" x2="21" y2="12"/>
+<line x1="3" y1="18" x2="21" y2="18"/>
+</symbol>
+
+<symbol id="icon-facebook" viewBox="0 0 24 24">
+<path d="M15.5 8.5h2.3V5.1c-.4-.05-1.8-.17-3.4-.17-3.35 0-5.65 2.1-5.65 5.97v2.5H5.4v3.9h3.35V22h4v-4.7h3.2l.5-3.9h-3.7v-2.1c0-1.13.3-1.9 1.75-1.9z"/>
+</symbol>
+
+<symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+<rect x="3" y="3" width="18" height="18" rx="5"/>
+<circle cx="12" cy="12" r="4.2"/>
+<circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/>
+</symbol>
+
+<symbol id="icon-tiktok" viewBox="0 0 24 24">
+<path d="M16.5 3c.4 2.2 1.8 3.7 4 3.9v3.1c-1.4 0-2.8-.4-4-1.2v6.4c0 3.4-2.7 5.8-5.9 5.8-3.2 0-5.9-2.4-5.9-5.8 0-3.3 2.6-5.7 5.8-5.8v3.2c-1.4.1-2.5 1.2-2.5 2.6 0 1.5 1.2 2.6 2.6 2.6 1.5 0 2.7-1.1 2.7-2.7V3z"/>
+</symbol>
+
+<symbol id="icon-linkedin" viewBox="0 0 24 24">
+<path d="M4.8 3.5a2 2 0 100 4 2 2 0 000-4zM3.2 9h3.2v11.5H3.2zM10 9h3.1v1.6h.05c.43-.8 1.5-1.7 3.1-1.7 3.3 0 3.95 2.2 3.95 5v6.6h-3.2v-5.9c0-1.4 0-3.2-2-3.2-2 0-2.3 1.5-2.3 3.1v6h-3.2z"/>
+</symbol>
+
+<symbol id="icon-whatsapp" viewBox="0 0 24 24">
+<path d="M12 2.5A9.5 9.5 0 003.6 17l-1.2 4.4 4.5-1.2A9.5 9.5 0 1012 2.5zm5.5 13.4c-.2.6-1.3 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.5s.8 2 .9 2.1c.1.2.1.4 0 .6-.1.2-.2.5-.4.5-.2.2-.4.5-.5.6-.2.2-.4.4-.2.7.2.3.9 1.5 2 2.4 1.3 1.2 2.4 1.5 2.8 1.7.3.2.5.1.7-.1.2-.2.8-.9 1-1.3.2-.3.4-.3.7-.2s2 .9 2.3 1.1c.3.2.5.3.6.4.1.2.1.9-.1 1.5z"/>
+</symbol>
+
 </defs>
 </svg>
 
-<!-- ============ HEADER / NAV ============ -->
+
+<!-- ==================================================
+     HEADER / NAVIGATION — UNCHANGED
+================================================== -->
+
 <header class="site-header" id="siteHeader">
   <div class="container nav-row">
+
     <a href="index.html#home" class="brand" aria-label="Navigate Centre home">
-      <img src="images/logo.png" alt="Navigate Centre logo" class="brand-logo" width="150" height="73">
+      <img src="images/logo.png"
+           alt="Navigate Centre logo"
+           class="brand-logo"
+           width="150"
+           height="73">
     </a>
+
     <nav class="main-nav" id="mainNav" aria-label="Primary">
       <ul>
         <li><a href="index.html#home">Home</a></li>
@@ -58,125 +84,242 @@
         <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
       </ul>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
-      <svg class="icon" width="26" height="26"><use href="#icon-menu"></use></svg>
+
+    <button class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="mainNav">
+
+      <svg class="icon" width="26" height="26">
+        <use href="#icon-menu"></use>
+      </svg>
+
     </button>
+
   </div>
 </header>
 
+
+<!-- ==================================================
+     SIMPLE BOOK RENTAL PAGE
+================================================== -->
+
 <main>
 
-<!-- ============ INTRO ============ -->
-<section class="hero" id="home" style="padding:110px 0 90px;">
+<section class="hero" style="padding:130px 0 120px;">
+
   <div class="container hero-inner">
+
     <p class="eyebrow">Navigate Centre Library</p>
-    <h1>Borrow <span class="text-lime">Books</span> at Navigate Centre</h1>
-    <p class="hero-lead">Can't find what you're looking for online? Browse our shelves in person and borrow a book — fiction, academic texts, business reads and more, at friendly rates.</p>
+
+    <h1>
+      Borrow a <span class="text-lime">Book</span>
+    </h1>
+
+    <p class="hero-lead" style="max-width:650px;">
+      Looking for something good to read?
+      Request a book from Navigate Centre using our simple rental form.
+    </p>
+
     <div class="hero-actions">
-      <a href="#categories" class="btn btn-primary">Browse Categories</a>
-      <a href="index.html#contact" class="btn btn-outline">Visit Us</a>
+
+      <a href="YOUR-FORM-LINK-HERE"
+         target="_blank"
+         rel="noopener"
+         class="btn btn-primary">
+        Rent a Book
+      </a>
+
+      <a href="index.html#contact"
+         class="btn btn-outline">
+        Contact Us
+      </a>
+
     </div>
+
   </div>
-  <div class="diagonal-divider diagonal-to-white" aria-hidden="true"></div>
+
+  <div class="diagonal-divider diagonal-to-white"
+       aria-hidden="true">
+  </div>
+
 </section>
 
-<!-- ============ HOW IT WORKS ============ -->
+
+<!-- SIMPLE PROCESS -->
+
 <section class="section about">
-  <div class="container">
-    <p class="eyebrow eyebrow-dark center">Simple &amp; Straightforward</p>
-    <h2 class="center">How Borrowing Works</h2>
-    <p class="section-sub center">No complicated sign-up — just visit, choose, and read.</p>
 
-    <div class="grid" style="grid-template-columns: repeat(4, 1fr); margin-top: 20px;">
+  <div class="container">
+
+    <p class="eyebrow eyebrow-dark center">
+      It's Simple
+    </p>
+
+    <h2 class="center">
+      How It Works
+    </h2>
+
+    <p class="section-sub center">
+      Getting your next book is easy.
+    </p>
+
+
+    <div class="grid"
+         style="grid-template-columns:repeat(3,1fr);margin-top:35px;">
+
       <div class="card" style="text-align:center;">
-        <div class="icon-badge" style="margin:0 auto 18px; font-family:Poppins,sans-serif; font-weight:800; font-size:1.4rem;">1</div>
-        <h3>Pick a Book</h3>
-        <p style="font-size:0.92rem;color:#555;">Browse our shelves in-store and choose a title that interests you.</p>
+
+        <div class="icon-badge"
+             style="margin:0 auto 18px;font-family:Poppins,sans-serif;font-weight:800;font-size:1.4rem;">
+          1
+        </div>
+
+        <h3>Choose</h3>
+
+        <p style="font-size:.92rem;color:#555;">
+          Choose the book you would like to borrow.
+        </p>
+
       </div>
+
+
       <div class="card" style="text-align:center;">
-        <div class="icon-badge" style="margin:0 auto 18px; font-family:Poppins,sans-serif; font-weight:800; font-size:1.4rem;">2</div>
-        <h3>Register</h3>
-        <p style="font-size:0.92rem;color:#555;">Leave your ID and contact details with our front desk to borrow.</p>
+
+        <div class="icon-badge"
+             style="margin:0 auto 18px;font-family:Poppins,sans-serif;font-weight:800;font-size:1.4rem;">
+          2
+        </div>
+
+        <h3>Fill the Form</h3>
+
+        <p style="font-size:.92rem;color:#555;">
+          Submit your details and book request through our form.
+        </p>
+
       </div>
+
+
       <div class="card" style="text-align:center;">
-        <div class="icon-badge" style="margin:0 auto 18px; font-family:Poppins,sans-serif; font-weight:800; font-size:1.4rem;">3</div>
-        <h3>Read &amp; Return</h3>
-        <p style="font-size:0.92rem;color:#555;">Take the book home and return it by the agreed date.</p>
+
+        <div class="icon-badge"
+             style="margin:0 auto 18px;font-family:Poppins,sans-serif;font-weight:800;font-size:1.4rem;">
+          3
+        </div>
+
+        <h3>Collect &amp; Read</h3>
+
+        <p style="font-size:.92rem;color:#555;">
+          We'll guide you on collecting your book and getting started.
+        </p>
+
       </div>
-      <div class="card" style="text-align:center;">
-        <div class="icon-badge" style="margin:0 auto 18px; font-family:Poppins,sans-serif; font-weight:800; font-size:1.4rem;">4</div>
-        <h3>Borrow Again</h3>
-        <p style="font-size:0.92rem;color:#555;">Come back anytime for your next read.</p>
-      </div>
+
     </div>
-    <!-- TODO: confirm exact process (ID/deposit requirements) with Navigate Centre staff and adjust the 4 steps above if needed -->
+
   </div>
+
 </section>
 
-<!-- ============ CATEGORIES ============ -->
-<section class="section services" id="categories">
-  <div class="diagonal-divider diagonal-to-black diagonal-top" aria-hidden="true"></div>
-  <div class="container">
-    <p class="eyebrow eyebrow-dark center">What's On The Shelf</p>
-    <h2 class="center">Book Categories</h2>
-    <p class="section-sub center" style="color:#c7c7c7;">A growing collection across these categories — ask our front desk what's currently in stock.</p>
 
-    <div class="grid services-grid" style="grid-template-columns: repeat(5, 1fr);">
-      <div class="card service-card"><span class="icon-badge"><svg class="icon"><use href="#icon-book"></use></svg></span><h3>Fiction &amp; Novels</h3><p>Stories to get lost in, from classics to contemporary reads.</p></div>
-      <div class="card service-card"><span class="icon-badge"><svg class="icon"><use href="#icon-cap"></use></svg></span><h3>Academic &amp; Revision</h3><p>Set books, revision guides and study material for students.</p></div>
-      <div class="card service-card"><span class="icon-badge"><svg class="icon"><use href="#icon-heart"></use></svg></span><h3>Children's Books</h3><p>Storybooks and early readers for younger visitors.</p></div>
-      <div class="card service-card"><span class="icon-badge"><svg class="icon"><use href="#icon-cv"></use></svg></span><h3>Business &amp; Self-Development</h3><p>Career, business and personal growth titles.</p></div>
-      <div class="card service-card"><span class="icon-badge"><svg class="icon"><use href="#icon-globe"></use></svg></span><h3>Magazines &amp; News</h3><p>Current affairs, magazines and general-interest reading.</p></div>
-    </div>
-    <!-- TODO: replace the 5 categories above with your actual catalogue sections once confirmed -->
-  </div>
-</section>
+<!-- FINAL CTA -->
 
-<!-- ============ TERMS ============ -->
-<section class="section training">
-  <div class="container">
-    <p class="eyebrow">Good to Know</p>
-    <h2>Borrowing Terms</h2>
-    <ul class="course-list" style="grid-template-columns: 1fr; max-width: 640px; margin-top: 20px;">
-      <li><svg class="icon icon-sm"><use href="#icon-check"></use></svg>Valid ID required to borrow</li>
-      <li><svg class="icon icon-sm"><use href="#icon-check"></use></svg>Standard borrowing period: agreed at the front desk</li>
-      <li><svg class="icon icon-sm"><use href="#icon-check"></use></svg>Small borrowing fee may apply per title</li>
-      <li><svg class="icon icon-sm"><use href="#icon-check"></use></svg>Please return books on time and in good condition</li>
-    </ul>
-    <!-- TODO: replace the placeholder terms above with your real borrowing period, fees and deposit policy -->
-  </div>
-</section>
-
-<!-- ============ CTA ============ -->
 <section class="section jobs">
+
   <div class="container center">
-    <p class="eyebrow eyebrow-dark">Come Say Hello</p>
-    <h2>Ready to Borrow?</h2>
-    <p class="section-sub">Visit Navigate Centre in Eldoret, or message us to ask what's currently available.</p>
-    <a href="https://wa.me/254700477205" target="_blank" rel="noopener" class="btn btn-jobs">Ask on WhatsApp</a>
+
+    <p class="eyebrow eyebrow-dark">
+      Ready to Read?
+    </p>
+
+    <h2>
+      Find Your Next Book
+    </h2>
+
+    <p class="section-sub">
+      Submit your request and let us help you get your next read.
+    </p>
+
+    <a href="YOUR-FORM-LINK-HERE"
+       target="_blank"
+       rel="noopener"
+       class="btn btn-jobs">
+      Start Renting
+    </a>
+
   </div>
+
 </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
+
+<!-- ==================================================
+     FOOTER — UNCHANGED
+================================================== -->
+
 <footer class="site-footer">
+
   <div class="container footer-grid">
+
     <div class="footer-brand">
-      <img src="images/logo.png" alt="Navigate Centre logo" class="footer-logo" loading="lazy" width="150" height="73">
+
+      <img src="images/logo.png"
+           alt="Navigate Centre logo"
+           class="footer-logo"
+           loading="lazy"
+           width="150"
+           height="73">
+
       <p>Your Digital Service Partner</p>
+
       <div class="social-row">
-        <!-- TODO: replace "#" links with real social media profile URLs (kept in sync with index.html) -->
-        <a href="#" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"></use></svg></a>
-        <a href="#" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"></use></svg></a>
-        <a href="#" aria-label="TikTok"><svg class="icon"><use href="#icon-tiktok"></use></svg></a>
-        <a href="https://wa.me/254700477205" aria-label="WhatsApp" target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"></use></svg></a>
-        <a href="#" aria-label="LinkedIn"><svg class="icon"><use href="#icon-linkedin"></use></svg></a>
+
+        <a href="#" aria-label="Facebook">
+          <svg class="icon">
+            <use href="#icon-facebook"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <svg class="icon">
+            <use href="#icon-instagram"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="TikTok">
+          <svg class="icon">
+            <use href="#icon-tiktok"></use>
+          </svg>
+        </a>
+
+        <a href="https://wa.me/254700477205"
+           aria-label="WhatsApp"
+           target="_blank"
+           rel="noopener">
+
+          <svg class="icon">
+            <use href="#icon-whatsapp"></use>
+          </svg>
+
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+          <svg class="icon">
+            <use href="#icon-linkedin"></use>
+          </svg>
+        </a>
+
       </div>
+
     </div>
 
+
     <div class="footer-links">
+
       <h4>Quick Links</h4>
+
       <ul>
         <li><a href="index.html#home">Home</a></li>
         <li><a href="index.html#services">Services</a></li>
@@ -185,28 +328,76 @@
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
+
     </div>
 
+
     <div class="footer-contact">
+
       <h4>Contact</h4>
+
       <p>0700 477 205</p>
       <p>0794 384 007</p>
       <p>navigatecenter2026@gmail.com</p>
+
     </div>
+
   </div>
+
+
   <div class="footer-bottom">
-    <p>&copy; <span id="year"></span> Navigate Centre. All Rights Reserved.</p>
+
+    <p>
+      &copy;
+      <span id="year"></span>
+      Navigate Centre. All Rights Reserved.
+    </p>
+
   </div>
+
 </footer>
 
-<a href="https://wa.me/254700477205" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
-  <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+
+<!-- WhatsApp -->
+
+<a href="https://wa.me/254700477205"
+   target="_blank"
+   rel="noopener"
+   class="whatsapp-float"
+   aria-label="Chat with us on WhatsApp">
+
+  <svg class="icon">
+    <use href="#icon-whatsapp"></use>
+  </svg>
+
 </a>
-<button class="back-to-top" id="backToTop" aria-label="Back to top">
-  <svg class="icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+
+
+<!-- Back to top -->
+
+<button class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top">
+
+  <svg class="icon"
+       width="20"
+       height="20"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       viewBox="0 0 24 24">
+
+    <polyline points="18 15 12 9 6 15"/>
+
+  </svg>
+
 </button>
 
-<!-- Reuses the site's existing script — no JS changes needed -->
+
 <script src="script.js"></script>
+
 </body>
 </html>
+```
